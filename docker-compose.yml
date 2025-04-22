@@ -1,0 +1,9 @@
+services:
+  database:
+    image: bitnami/postgresql:latest
+    environment:
+      POSTGRES_USER: docker
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: export
+    ports:
+      - "5432:5432"
