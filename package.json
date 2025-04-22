@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:dev": "tsx watch src/index.ts",
+    "start:dev": "tsx --env-file=.env.local src/export.ts",
     "seed": "node --env-file=.env.local --enable-source-maps -r tsx src/db/seed.ts",
     "test": "vitest run",
     "test:watch": "vitest",
